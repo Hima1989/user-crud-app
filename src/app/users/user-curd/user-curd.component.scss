@@ -1,0 +1,57 @@
+table {
+  width: 100%;
+}
+
+.container {
+  margin: 15px;
+}
+
+
+.userListContainer{
+  display: flex;
+  .userTable {
+    background: #fff;
+    padding: 20px;
+    &.leftContent{
+      flex: 1 1 auto
+    }
+    h4 {
+      border-bottom: 1px solid rgba(0, 0, 0, .12);
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .mat-elevation-z8 {
+      box-shadow: none;
+  
+      .mat-table {
+        font-family: 'Poppins', sans-serif;
+        border: 1px solid rgba(0, 0, 0, .12);
+        border-bottom: none;
+  
+        th.mat-header-cell {
+          background: #00a99d;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .progressBar{
+    flex: 1;
+    margin-left: 20px;
+    .userTable{
+      h5{
+        font-weight: 300;
+        font-size: 16px;
+        span{
+          font-size: 16px;
+          font-weight: 700;
+          width: 120px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

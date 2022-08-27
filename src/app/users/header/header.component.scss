@@ -1,0 +1,26 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .mat-toolbar{
+    background: #fff;
+    margin-bottom: 20px;
+  }
+  .profileBlock{
+    display: flex;
+    align-items: center;
+      .userImage{
+        width: 70px;
+      }
+      span{
+        font-size: 14px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+      }
+  }
+  .header{
+    .heading{
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+    }
+  }

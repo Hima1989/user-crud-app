@@ -1,0 +1,128 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #e3e8e8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    background: transparent;
+}
+
+.mat-typography {
+    font-family: 'Poppins', sans-serif;
+}
+
+.mat-checkbox-inner-container {
+    .mat-checkbox-frame {
+        border-color: rgba(0, 0, 0, .12);
+        background: #fff;
+    }
+}
+
+.progressBar {
+    .mat-progress-bar {
+        height: 10px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        border: 1px solid rgba(0, 0, 0, .12);
+
+        .mat-progress-bar-fill {
+            &:after {
+                background-color: #00a99d;
+            }
+        }
+
+        .mat-progress-bar-buffer {
+            background: #fff;
+        }
+    }
+}
+
+.mat-dialog-container {
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        border-bottom: 1px solid rgba(0, 0, 0, .12);
+        width: 100%;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+}
+
+.mat-form-field-appearance-outline.mat-focused {
+
+    .mat-form-field-outline-thick,
+    .mat-form-field-label {
+        color: #00a99d;
+    }
+}
+
+.mat-radio-button.mat-accent {
+    .mat-radio-outer-circle {
+        border: 1px solid rgba(0, 0, 0, .12);
+    }
+
+    &.mat-radio-checked {
+        .mat-radio-outer-circle {
+            border: 2px solid #00a99d;
+        }
+
+        .mat-radio-inner-circle {
+            background: #00a99d;
+        }
+    }
+}
+
+.mat-stroked-button.mat-primary {
+
+    &.submitButton,
+    &.cancelButton {
+        border-radius: 30px;
+        border-color: #00a99d;
+        color: #fff;
+        background: #00a99d;
+        font-size: 14px;
+    }
+
+    &.cancelButton {
+        background: #fff;
+        color: #00a99d;
+    }
+}
+
+/// Responsive Css Styles ////
+@media only screen and (max-width: 1280px) {
+    .userListContainer .userTable.leftContent {
+        flex: auto !important;
+    }
+
+    .userListContainer .progressBar {
+        flex: auto !important;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 1152px) {
+    .userListContainer {
+        display: block !important;
+
+        .progressBar {
+            margin-top: 30px;
+            margin-left: 0 !important;
+            width: 350px;
+        }
+    }
+}
